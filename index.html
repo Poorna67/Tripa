@@ -1,1745 +1,370 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<!-- SEO -->
-<title>TriPA Lead Gen Pros | Built by three - focused on Growth</title>
-<meta content="TriPA Lead Gen Pros helps B2B &amp; B2C companies grow with lead generation, data enrichment, email marketing, and appointment setting." name="description"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<style>
-:root{
-  --bg:#ffffff;
-  --bg-secondary:#f8fafc;
-  --text:#0a0a0a;
-  --text-secondary:#475569;
-  --muted:#6b6b6b;
-  --primary:#3b82f6;
-  --primary-dark:#2563eb;
-  --accent-green:#10b981;
-  --accent-blue:#60a5fa;
-  --accent-yellow:#f59e0b;
-  --glass-bg:rgba(255,255,255,0.75);
-  --glass-border:rgba(255,255,255,0.2);
-  --shadow:rgba(0,0,0,0.05);
-  --shadow-dark:rgba(0,0,0,0.1);
-  --gradient:linear-gradient(135deg, #3b82f6 0%, #10b981 50%, #f59e0b 100%);
-  --gradient-light:linear-gradient(135deg, rgba(59,130,246,0.1) 0%, rgba(16,185,129,0.1) 50%, rgba(245,158,11,0.1) 100%);
-}
-
-body.dark{
-  --bg:#0f172a;
-  --bg-secondary:#1e293b;
-  --text:#f1f5f9;
-  --text-secondary:#cbd5e1;
-  --muted:#94a3b8;
-  --glass-bg:rgba(15,23,42,0.75);
-  --glass-border:rgba(255,255,255,0.05);
-  --shadow:rgba(0,0,0,0.2);
-  --shadow-dark:rgba(0,0,0,0.3);
-  --gradient-light:linear-gradient(135deg, rgba(59,130,246,0.15) 0%, rgba(16,185,129,0.15) 50%, rgba(245,158,11,0.15) 100%);
-}
-
-*{margin:0;padding:0;box-sizing:border-box;}
-
-body{
-  font-family: 'Inter', sans-serif;
-  background-color: var(--bg);
-  color:var(--text);
-  transition:background-color 0.4s, color 0.4s;
-  overflow-x:hidden;
-  line-height:1.6;
-}
-
-/* ===== BACKGROUND ===== */
-.bg{
-  position:fixed;
-  inset:0;
-  z-index:-2;
-  background:
-    radial-gradient(circle at 10% 20%, rgba(59,130,246,0.25) 0%, transparent 40%),
-    radial-gradient(circle at 80% 10%, rgba(16,185,129,0.25) 0%, transparent 40%),
-    radial-gradient(circle at 50% 80%, rgba(245,158,11,0.25) 0%, transparent 40%);
-  animation:bgMove 20s ease-in-out infinite alternate;
-}
-
-@keyframes bgMove{
-  0% { transform: scale(1) translateX(0) translateY(0); }
-  50% { transform: scale(1.05) translateX(-20px) translateY(20px); }
-  100% { transform: scale(1) translateX(20px) translateY(-20px); }
-}
-
-/* ===== ENHANCED HEADER ===== */
-header{
-  position:fixed;
-  top:0;
-  width:100%;
-  padding:18px 6%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  background: var(--glass-bg);
-  backdrop-filter:blur(12px) saturate(180%);
-  -webkit-backdrop-filter:blur(12px) saturate(180%);
-  border-bottom:1px solid var(--glass-border);
-  box-shadow:0 4px 30px var(--shadow);
-  z-index:1000;
-  min-height: 95px;
-}
-
-/* Logo Section - Left Side with TriPA Style */
-.logo-container{
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  gap: 15px;
-  min-width: 280px;
-}
-
-/* TriPA Logo Styling */
-.tripa-logo{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: all 0.4s ease;
-  position: relative;
-  padding: 8px 0;
-}
-
-.tripa-logo:hover{
-  transform: translateY(-2px);
-}
-
-.logo-top-line{
-  font-size: 2.4rem;
-  font-weight: 900;
-  color: var(--text);
-  line-height: 0.9;
-  letter-spacing: -2px;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  position: relative;
-  display: inline-block;
-  animation: logoGlow 3s ease-in-out infinite alternate;
-  white-space: nowrap;
-}
-
-@keyframes logoGlow {
-  0% {
-    text-shadow: 0 0 10px rgba(59, 130, 246, 0.3),
-                 0 0 20px rgba(16, 185, 129, 0.2),
-                 0 0 30px rgba(245, 158, 11, 0.1);
-  }
-  100% {
-    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5),
-                 0 0 30px rgba(16, 185, 129, 0.3),
-                 0 0 40px rgba(245, 158, 11, 0.2);
-  }
-}
-
-.logo-bottom-line{
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  font-weight: 700;
-  letter-spacing: 6px;
-  margin-top: 4px;
-  text-transform: uppercase;
-  text-align: left;
-  position: relative;
-  padding-left: 2px;
-  animation: slideIn 1s ease-out;
-  white-space: nowrap;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Navigation - Centered with Good Spacing */
-.nav-links{
-  display:flex;
-  gap: 45px;
-  align-items:center;
-  flex-grow: 1;
-  justify-content: center;
-  margin: 0 40px;
-}
-
-nav a{
-  text-decoration:none;
-  font-weight:700;
-  color:var(--text);
-  font-size:1rem;
-  position:relative;
-  padding: 10px 0;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-  text-transform: uppercase;
-}
-
-nav a::before{
-  content:'';
-  position:absolute;
-  bottom:0;
-  left:0;
-  width:100%;
-  height:3px;
-  background: var(--gradient);
-  border-radius: 4px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-nav a:hover::before{
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-nav a:hover{
-  color: var(--accent-green);
-  transform: translateY(-2px);
-}
-
-/* Right Side Section with Toggle and Mobile Menu */
-.header-right{
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  flex-shrink: 0;
-  min-width: 140px;
-  justify-content: flex-end;
-}
-
-/* Toggle Button - Right Corner */
-.toggle-container{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  position: relative;
-}
-
-.toggle-label{
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  font-weight: 500;
-}
-
-.toggle{
-  width:56px;
-  height:30px;
-  background: var(--gradient);
-  border-radius:40px;
-  position:relative;
-  cursor:pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  flex-shrink: 0;
-  overflow: hidden;
-}
-
-.toggle::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--text-secondary);
-  transition: opacity 0.3s;
-  opacity: 0;
-}
-
-body.dark .toggle::before {
-  opacity: 1;
-}
-
-.toggle span{
-  position:absolute;
-  width:24px;
-  height:24px;
-  background:var(--bg);
-  border-radius:50%;
-  top:3px;
-  left:3px;
-  transition:transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), background 0.3s;
-  box-shadow:0 3px 8px rgba(0,0,0,0.2);
-  z-index: 2;
-}
-
-body.dark .toggle span{
-  transform:translateX(26px);
-  background: #1a1a1a;
-}
-
-.toggle i{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  font-size:0.8rem;
-  z-index: 1;
-  transition: opacity 0.3s;
-}
-
-.toggle .sun{
-  left:8px;
-  color:#ffd700;
-}
-
-.toggle .moon{
-  right:8px;
-  color:#a3bffa;
-}
-
-/* Mobile menu button */
-.mobile-menu-btn{
-  display:none;
-  background:none;
-  border:none;
-  font-size:1.5rem;
-  color:var(--text);
-  cursor:pointer;
-  z-index:1001;
-  padding: 10px 12px;
-  border-radius: 10px;
-  background: var(--gradient-light);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.mobile-menu-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--gradient);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.mobile-menu-btn:hover::before {
-  opacity: 0.1;
-}
-
-.mobile-menu-btn:hover{
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-}
-
-.mobile-menu-btn i {
-  position: relative;
-  z-index: 1;
-}
-
-/* ===== HERO SECTION ===== */
-section{
-  padding:140px 6% 100px;
-  opacity:0;
-  transform:translateY(40px);
-  transition:opacity 0.8s ease, transform 0.8s ease;
-}
-
-section.show{
-  opacity:1;
-  transform:none;
-}
-
-.hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  position:relative;
-  padding-top:180px;
-}
-
-.hero-content{
-  max-width:800px;
-  position:relative;
-  z-index:1;
-}
-
-.hero h1{
-  font-size:clamp(2.8rem, 7vw, 5rem);
-  font-weight:900;
-  line-height:1.1;
-  margin-bottom:24px;
-  background:var(--gradient);
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
-  display:inline-block;
-  animation: textShimmer 3s ease-in-out infinite alternate;
-}
-
-@keyframes textShimmer {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
-.hero p{
-  font-size:clamp(1.1rem, 3vw, 1.4rem);
-  color:var(--text-secondary);
-  max-width:600px;
-  margin-bottom:40px;
-}
-
-.cta-button{
-  display:inline-block;
-  padding:16px 36px;
-  background:var(--gradient);
-  color:white;
-  font-weight:700;
-  text-decoration:none;
-  border-radius:12px;
-  transition:transform 0.3s, box-shadow 0.3s;
-  box-shadow:0 10px 30px rgba(59,130,246,0.3);
-  border:none;
-  cursor:pointer;
-  font-size:1rem;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.cta-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--gradient);
-  opacity: 0;
-  transition: opacity 0.3s;
-  z-index: -1;
-}
-
-.cta-button:hover::before {
-  opacity: 1;
-}
-
-.cta-button:hover{
-  transform:translateY(-5px);
-  box-shadow:0 15px 40px rgba(59,130,246,0.4);
-}
-
-/* Section headers */
-h2{
-  font-size:clamp(2.2rem, 5vw, 3.2rem);
-  font-weight:900;
-  margin-bottom:20px;
-  position:relative;
-  display:inline-block;
-}
-
-h2::after{
-  content:'';
-  position:absolute;
-  bottom:-10px;
-  left:0;
-  width:80px;
-  height:4px;
-  background:var(--gradient);
-  border-radius:2px;
-}
-
-/* Special fancy font for About section */
-#about h2 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 800;
-  font-style: italic;
-  letter-spacing: 1px;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  padding-bottom: 15px;
-}
-
-#about h2::after {
-  width: 120px;
-  height: 3px;
-  bottom: -5px;
-}
-
-/* ===== GLOSSY CARDS ===== */
-.cards{
-  margin-top:60px;
-  display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
-  gap:30px;
-}
-
-.card{
-  padding:32px;
-  border-radius:20px;
-  background:var(--glass-bg);
-  backdrop-filter:blur(10px);
-  -webkit-backdrop-filter:blur(10px);
-  border:1px solid var(--glass-border);
-  box-shadow:0 8px 32px var(--shadow);
-  transform-style:preserve-3d;
-  transition:transform 0.4s, box-shadow 0.4s, background 0.4s;
-  text-align:center;
-  position:relative;
-  overflow:hidden;
-  z-index:1;
-}
-
-.card::before{
-  content:'';
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  height:4px;
-  background:var(--gradient);
-  z-index:2;
-}
-
-.card:hover{
-  transform:translateY(-10px) scale(1.02);
-  box-shadow:0 20px 50px var(--shadow-dark);
-}
-
-.card h3{
-  font-size:1.4rem;
-  margin-bottom:12px;
-  color:var(--text);
-}
-
-.card small{
-  display:block;
-  color:var(--text-secondary);
-  font-size:0.9rem;
-  line-height:1.5;
-}
-
-/* ===== PROCESS FLOW ===== */
-.process-flow{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-wrap:wrap;
-  margin-top:60px;
-  gap:20px;
-}
-
-.process-step{
-  padding:30px;
-  border-radius:20px;
-  background:var(--glass-bg);
-  backdrop-filter:blur(10px);
-  border:1px solid var(--glass-border);
-  box-shadow:0 8px 32px var(--shadow);
-  text-align:center;
-  width:180px;
-  transition:transform 0.3s;
-  position:relative;
-}
-
-.process-step:hover{
-  transform:translateY(-5px);
-}
-
-.step-number{
-  position:absolute;
-  top:-15px;
-  left:50%;
-  transform:translateX(-50%);
-  width:30px;
-  height:30px;
-  background:var(--gradient);
-  color:white;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:bold;
-  font-size:0.9rem;
-}
-
-.arrow{
-  font-size:2rem;
-  opacity:0.6;
-  animation:arrowMove 1.6s infinite alternate;
-  color:var(--primary);
-}
-
-@keyframes arrowMove{
-  from{transform:translateX(0);}
-  to{transform:translateX(10px);}
-}
-
-/* ===== CLIENTS SECTION ===== */
-#clients {
-  position: relative;
-  overflow: hidden;
-}
-
-.clients-container {
-  margin-top: 60px;
-  position: relative;
-  height: 400px;
-  overflow: hidden;
-}
-
-.clients-scroll-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  animation: scrollClients 20s linear infinite;
-  padding: 20px 0;
-}
-
-.clients-scroll-wrapper:hover {
-  animation-play-state: paused;
-}
-
-.client-row {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.case{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  padding:40px 30px;
-  min-width: 300px;
-  background: var(--glass-bg);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--glass-border);
-  border-radius: 20px;
-  box-shadow: 0 8px 32px var(--shadow);
-  transition: transform 0.3s;
-}
-
-.case:hover{
-  transform: translateY(-5px);
-}
-
-.case img{
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  margin-bottom: 20px;
-  filter: grayscale(50%);
-  transition: all 0.3s;
-  object-fit: contain;
-  display: block;
-}
-
-.case:hover img{
-  filter: grayscale(0%);
-}
-
-.case small{
-  text-align:center;
-  margin-top:15px;
-  font-size:0.95rem;
-  color: var(--text-secondary);
-}
-
-@keyframes scrollClients {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-50%);
-  }
-}
-
-/* About Section Styling */
-.about-content {
-  max-width: 900px;
-  margin: 60px auto 0;
-  padding: 40px;
-  background: var(--glass-bg);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--glass-border);
-  border-radius: 24px;
-  box-shadow: 0 12px 40px var(--shadow);
-}
-
-.about-text {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: var(--text-secondary);
-}
-
-.about-text p {
-  margin-bottom: 24px;
-}
-
-.about-text strong {
-  color: var(--text);
-  font-weight: 700;
-}
-
-.about-highlight {
-  background: var(--gradient-light);
-  padding: 25px;
-  border-radius: 16px;
-  margin: 30px 0;
-  border-left: 4px solid var(--accent-green);
-}
-
-.about-highlight p {
-  margin-bottom: 0;
-  font-style: italic;
-  color: var(--text);
-}
-
-/* TEAM SECTION */
-.team{
-  margin-top:60px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-  gap:40px;
-}
-
-.team-member{
-  padding:40px 30px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-  background: var(--glass-bg);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--glass-border);
-  border-radius: 20px;
-  box-shadow: 0 8px 32px var(--shadow);
-  transition: transform 0.3s;
-}
-
-.team-member:hover{
-  transform: translateY(-5px);
-}
-
-.team-member strong{
-  font-size:1.4rem;
-  margin-bottom:5px;
-}
-
-.team-member small{
-  color:var(--primary);
-  font-weight:600;
-  margin-bottom:15px;
-}
-
-.team-email {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  margin-top: 8px;
-  transition: color 0.3s;
-}
-
-.team-email:hover {
-  color: var(--primary);
-}
-
-/* ===== ENHANCED CONTACT SECTION ===== */
-.contact-container {
-  max-width: 500px;
-  margin: 60px auto 0;
-}
-
-.contact-card {
-  padding: 40px;
-  border-radius: 24px;
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
-  box-shadow: 0 12px 40px var(--shadow);
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.contact-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 6px;
-  background: var(--gradient);
-  z-index: 2;
-}
-
-.contact-card h3 {
-  font-size: 1.8rem;
-  margin-bottom: 30px;
-  color: var(--text);
-}
-
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-  margin-bottom: 35px;
-  text-align: left;
-  padding: 0 10px;
-}
-
-.contact-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 12px 0;
-  border-bottom: 1px solid var(--glass-border);
-}
-
-.contact-item:last-child {
-  border-bottom: none;
-}
-
-.contact-icon {
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary);
-  font-size: 1.1rem;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.contact-label {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-.contact-value {
-  font-size: 1.1rem;
-  color: var(--text);
-  font-weight: 600;
-  line-height: 1.4;
-  word-break: break-word;
-}
-
-.contact-email {
-  color: var(--primary);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.contact-email:hover {
-  color: var(--primary-dark);
-  text-decoration: underline;
-}
-
-.contact-phone-numbers {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.phone-number {
-  font-weight: 600;
-}
-
-.contact-button {
-  display: inline-block;
-  padding: 16px 40px;
-  background: var(--gradient);
-  color: white;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 12px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 10px 30px rgba(59,130,246,0.3);
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 10px;
-}
-
-.contact-button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(59,130,246,0.4);
-}
-
-/* FOOTER */
-footer{
-  padding:60px 6% 40px;
-  color:var(--muted);
-  font-size:0.95rem;
-  background:var(--bg-secondary);
-  border-top:1px solid var(--glass-border);
-  text-align:center;
-}
-
-.footer-content{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:20px;
-}
-
-.social-links{
-  display:flex;
-  gap:25px;
-  margin-top:10px;
-}
-
-.social-links a{
-  color:var(--text-secondary);
-  font-size:1.3rem;
-  transition: all 0.3s ease;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: var(--glass-bg);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--glass-border);
-}
-
-.social-links a:hover{
-  color:var(--primary);
-  transform:translateY(-5px);
-  box-shadow: 0 10px 20px var(--shadow);
-}
-
-.social-links a.linkedin:hover {
-  color: #0077b5;
-  background: rgba(0, 119, 181, 0.1);
-}
-
-.social-links a.twitter:hover {
-  color: #1da1f2;
-  background: rgba(29, 161, 242, 0.1);
-}
-
-.social-links a.instagram:hover {
-  color: #e4405f;
-  background: rgba(228, 64, 95, 0.1);
-}
-
-.social-links a.facebook:hover {
-  color: #1877f2;
-  background: rgba(24, 119, 242, 0.1);
-}
-
-/* Footer Logo */
-.footer-logo{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.footer-logo .primary{
-  font-size: 2rem;
-  font-weight: 900;
-  color: var(--text);
-  line-height: 1;
-  letter-spacing: -1px;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: logoGlow 3s ease-in-out infinite alternate;
-}
-
-.footer-logo .tagline{
-  font-size: 0.7rem;
-  color: var(--text-secondary);
-  font-weight: 700;
-  letter-spacing: 4px;
-  margin-top: 5px;
-  text-transform: uppercase;
-}
-
-/* ===== MOBILE RESPONSIVENESS ===== */
-@media(max-width: 1200px){
-  .nav-links{
-    gap: 38px;
-    margin: 0 30px;
-  }
-  
-  .logo-top-line{
-    font-size: 2.1rem;
-  }
-  
-  .logo-container{
-    min-width: 260px;
-  }
-}
-
-@media(max-width: 1024px){
-  header{
-    padding: 16px 5%;
-    min-height: 90px;
-  }
-  
-  section{
-    padding:120px 5% 80px;
-  }
-  
-  .cards{
-    grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
-    gap:25px;
-  }
-  
-  .logo-top-line{
-    font-size: 1.9rem;
-  }
-  
-  .logo-bottom-line{
-    font-size: 0.75rem;
-    letter-spacing: 5px;
-  }
-  
-  .nav-links{
-    gap: 32px;
-    margin: 0 25px;
-  }
-  
-  nav a{
-    font-size: 0.95rem;
-  }
-  
-  .logo-container{
-    min-width: 240px;
-  }
-  
-  .clients-scroll-wrapper {
-    animation: scrollClients 25s linear infinite;
-  }
-}
-
-@media(max-width: 900px){
-  header{
-    min-height: 85px;
-    padding: 14px 5%;
-  }
-  
-  .nav-links{
-    gap: 28px;
-    margin: 0 20px;
-  }
-  
-  nav a{
-    font-size: 0.9rem;
-  }
-  
-  .logo-top-line{
-    font-size: 1.75rem;
-  }
-  
-  .logo-bottom-line{
-    font-size: 0.7rem;
-    letter-spacing: 4px;
-  }
-  
-  .header-right{
-    gap: 20px;
-    min-width: 120px;
-  }
-  
-  .logo-container{
-    min-width: 220px;
-  }
-  
-  .client-row {
-    gap: 20px;
-  }
-  
-  .case {
-    min-width: 250px;
-  }
-}
-
-@media(max-width: 768px){
-  header{
-    min-height: 80px;
-    padding: 12px 4%;
-  }
-  
-  .logo-top-line{
-    font-size: 1.6rem;
-  }
-  
-  .logo-bottom-line{
-    font-size: 0.65rem;
-    letter-spacing: 3px;
-  }
-  
-  .logo-container{
-    min-width: 200px;
-  }
-  
-  /* Mobile menu styles */
-  .nav-links{
-    position:fixed;
-    top:0;
-    right:-100%;
-    width:300px;
-    height:100vh;
-    background:var(--glass-bg);
-    backdrop-filter:blur(20px);
-    -webkit-backdrop-filter:blur(20px);
-    flex-direction:column;
-    justify-content:flex-start;
-    align-items:flex-start;
-    gap:30px;
-    padding-top: 100px;
-    padding-left: 40px;
-    transition:right 0.4s ease;
-    z-index:1000;
-    border-left:1px solid var(--glass-border);
-    margin: 0;
-  }
-  
-  .nav-links.active{
-    right:0;
-  }
-  
-  .mobile-menu-btn{
-    display:block;
-  }
-  
-  .toggle-container{
-    display: none;
-  }
-  
-  .hero{
-    padding-top:140px;
-    text-align:center;
-  }
-  
-  .hero-content{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-  }
-  
-  .process-flow{
-    flex-direction:column;
-    align-items:center;
-  }
-  
-  .arrow{
-    transform:rotate(90deg);
-    margin:10px 0;
-  }
-  
-  .cards{
-    grid-template-columns:1fr;
-    gap:20px;
-  }
-  
-  .team{
-    grid-template-columns:1fr;
-  }
-  
-  h2{
-    text-align:center;
-  }
-  
-  h2::after{
-    left:50%;
-    transform:translateX(-50%);
-  }
-  
-  .contact-card {
-    padding: 30px 25px;
-  }
-  
-  .contact-details {
-    gap: 18px;
-  }
-  
-  .contact-item {
-    gap: 14px;
-  }
-  
-  .clients-container {
-    height: 350px;
-  }
-  
-  .client-row {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .case {
-    min-width: 280px;
-  }
-  
-  .about-content {
-    padding: 30px 25px;
-  }
-  
-  .about-text {
-    font-size: 1rem;
-  }
-}
-
-@media(max-width: 480px){
-  section{
-    padding:100px 4% 60px;
-  }
-  
-  header{
-    min-height: 75px;
-    padding: 10px 4%;
-  }
-  
-  .logo-top-line{
-    font-size: 1.4rem;
-    letter-spacing: -1px;
-  }
-  
-  .logo-bottom-line{
-    font-size: 0.6rem;
-    letter-spacing: 2px;
-  }
-  
-  .logo-container{
-    min-width: 180px;
-  }
-  
-  .toggle{
-    width: 50px;
-    height: 28px;
-  }
-  
-  .toggle span{
-    width: 22px;
-    height: 22px;
-  }
-  
-  body.dark .toggle span{
-    transform:translateX(22px);
-  }
-  
-  .header-right{
-    gap: 15px;
-    min-width: 100px;
-  }
-  
-  .hero h1{
-    font-size:2.5rem;
-  }
-  
-  .hero p{
-    font-size:1.1rem;
-  }
-  
-  .card{
-    padding:25px 20px;
-  }
-  
-  .process-step{
-    width:100%;
-    max-width:300px;
-  }
-  
-  .contact-card {
-    padding: 25px 20px;
-  }
-  
-  .contact-details {
-    gap: 16px;
-  }
-  
-  .contact-item {
-    flex-direction: column;
-    gap: 8px;
-    padding: 15px 0;
-  }
-  
-  .contact-icon {
-    margin-top: 0;
-  }
-  
-  .contact-value {
-    font-size: 1rem;
-  }
-  
-  .clients-container {
-    height: 300px;
-  }
-  
-  .case {
-    min-width: 250px;
-    padding: 30px 20px;
-  }
-  
-  .about-content {
-    padding: 25px 20px;
-  }
-  
-  .about-highlight {
-    padding: 20px;
-  }
-}
-
-/* Loading animation */
-.loading {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border: 3px solid rgba(255,255,255,.3);
-  border-radius: 50%;
-  border-top-color: #fff;
-  animation: spin 1s ease-in-out infinite;
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-
-/* Floating animation for logo */
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-.tripa-logo {
-  animation: float 6s ease-in-out infinite;
-}
-</style>
-</meta></head>
+    <meta charset="utf-8"/>
+    <title>TriPA Lead Gen Pros | Built by Three, Focused on Growth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --dark: #0f172a;
+            --text: #334155;
+            --glass: rgba(255, 255, 255, 0.6); 
+            --glass-border: rgba(255, 255, 255, 0.8);
+            --insta-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            --linked-color: #0077b5;
+        }
+
+        /* Reset & Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background: linear-gradient(-45deg, #fdfcfb, #e2ebf0, #f6d5f7, #fbe9d7, #d9f2ff);
+            background-size: 400% 400%;
+            animation: rainbowFlow 15s ease infinite;
+            background-attachment: fixed;
+        }
+
+        @keyframes rainbowFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Navigation Alignment */
+        header { 
+            position: fixed; top: 0; width: 100%; 
+            padding: 5px 6%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            background: rgba(255, 255, 255, 0.7); 
+            backdrop-filter: blur(15px); 
+            z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.4);
+        }
+
+        .logo-img { 
+            height: 120px; 
+            width: auto; 
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+            display: block;
+        }
+        .logo-img:hover { transform: scale(1.05); }
+
+        /* NEW: Enhanced Nav Link Animations */
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a { 
+            text-decoration: none; 
+            color: var(--dark); 
+            margin-left: 35px; 
+            font-weight: 800; 
+            font-size: 0.85rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1.5px; 
+            transition: color 0.3s ease;
+            position: relative;
+            padding: 10px 0;
+            /* Initial state for entrance animation */
+            opacity: 0;
+            transform: translateY(-10px);
+            animation: navEntrance 0.5s ease forwards;
+        }
+
+        /* Underline Hover Effect */
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        nav a:hover { color: var(--primary); }
+        nav a:hover::after { width: 100%; }
+
+        /* Entrance Animation Stagger */
+        @keyframes navEntrance {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        nav a:nth-child(1) { animation-delay: 0.1s; }
+        nav a:nth-child(2) { animation-delay: 0.2s; }
+        nav a:nth-child(3) { animation-delay: 0.3s; }
+        nav a:nth-child(4) { animation-delay: 0.4s; }
+        nav a:nth-child(5) { animation-delay: 0.5s; }
+        nav a:nth-child(6) { animation-delay: 0.6s; }
+
+        /* Animation System */
+        section { padding: 180px 8% 80px; opacity: 0; transform: translateY(40px); transition: 1s cubic-bezier(0.25, 1, 0.5, 1); }
+        section.reveal { opacity: 1; transform: translateY(0); }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 800; background: linear-gradient(135deg, #0f172a 0%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        /* Hero */
+        .hero { min-height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        .hero h1 { font-size: clamp(3rem, 8vw, 5.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 20px; color: var(--dark); }
+        .hero p { font-size: 1.1rem; font-weight: 700; opacity: 0.8; letter-spacing: 4px; text-transform: uppercase; color: var(--primary); }
+
+        /* Grid Cards */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .premium-glass-card { 
+            background: var(--glass); padding: 40px; border-radius: 30px; border: 1px solid var(--glass-border); 
+            transition: all 0.4s; display: flex; flex-direction: column; align-items: center; text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        .premium-glass-card:hover { transform: translateY(-12px); background: #ffffff; border-color: var(--primary); box-shadow: 0 20px 40px rgba(0,0,0,0.06); }
+        .premium-glass-card i { font-size: 2.2rem; color: var(--primary); margin-bottom: 20px; }
+
+        /* Marquee */
+        .marquee { 
+            width: 90%; margin: 0 auto; overflow: hidden; padding: 40px 0; 
+            background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(20px); 
+            border-radius: 100px; border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+        }
+        .marquee-track { display: flex; width: max-content; animation: scroll 35s linear infinite; align-items: center; }
+        .marquee-track img { height: 50px; width: 140px; object-fit: contain; margin: 0 60px; filter: grayscale(100%); opacity: 0.4; transition: 0.5s; }
+        .marquee-track img:hover { filter: grayscale(0%); opacity: 1; transform: scale(1.25); }
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+        /* Process */
+        .process-grid { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr; align-items: center; gap: 15px; max-width: 1100px; margin: 0 auto; }
+        .process-card { text-align: center; padding: 30px 20px; background: var(--glass); border: 1px solid var(--glass-border); border-radius: 24px; transition: 0.3s; }
+        .process-card:hover { background: #ffffff; transform: scale(1.05); }
+        .process-arrow { font-size: 1.5rem; color: var(--primary); opacity: 0.6; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(10px); } }
+
+        /* Founders Section */
+        .founders-wrapper { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px; align-items: flex-end; }
+        .founder-orb { width: 220px; text-align: center; }
+        .img-container { 
+            width: 180px; height: 180px; margin: 0 auto 20px; border-radius: 50%; 
+            position: relative; overflow: hidden; border: 6px solid #fff; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08); cursor: pointer; transition: 0.5s;
+        }
+        .img-container:hover { transform: translateY(-10px); border-color: var(--primary); }
+        .email-overlay { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+            background: rgba(15, 23, 42, 0.9); color: white; display: flex; 
+            align-items: center; justify-content: center; font-size: 0.75rem; 
+            font-weight: 700; opacity: 0; transition: 0.3s; padding: 10px;
+        }
+        .img-container:hover .email-overlay { opacity: 1; }
+
+        /* Contact Tiles */
+        .contact-tile { 
+            background: var(--glass); border: 1px solid var(--glass-border); padding: 40px; 
+            border-radius: 35px; text-align: center; transition: 0.4s; text-decoration: none; 
+            color: inherit; display: flex; flex-direction: column; align-items: center; 
+        }
+        .contact-tile:hover { background: #ffffff; transform: scale(1.05); border-color: var(--primary); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+        .contact-tile i { font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; transition: 0.3s; }
+
+        /* Social Hub */
+        .social-hub { display: flex; justify-content: center; gap: 20px; margin-top: 50px; }
+        .social-btn { 
+            width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; 
+            font-size: 1.5rem; background: var(--glass); border: 1px solid var(--glass-border); color: var(--dark); transition: 0.4s; 
+        }
+        .social-btn.li:hover { background: var(--linked-color); color: white; transform: translateY(-5px); }
+        .social-btn.ig:hover { background: var(--insta-gradient); color: white; transform: translateY(-5px); }
+
+        /* Mobile Adjustments */
+        @media (max-width: 1024px) {
+            nav { display: none; }
+            header { justify-content: center; padding: 10px; }
+            .logo-img { height: 80px; } 
+            section { padding: 130px 8% 60px; }
+            .process-grid { grid-template-columns: 1fr; }
+            .process-arrow { transform: rotate(90deg); margin: -10px 0; }
+            .marquee { width: 95%; border-radius: 50px; }
+        }
+
+        /* STYLISH STORY HEADING */
+        .story-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 3.8rem);
+            font-weight: 900;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 35px;
+            background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 10px 10px rgba(0,0,0,0.05));
+            letter-spacing: -1px;
+        }
+    </style>
+</head>
 <body>
-<div class="bg"></div>
-<!-- Header with TriPA Style -->
+
 <header>
-<!-- TriPA Logo on Left -->
-<div class="logo-container">
-<div class="tripa-logo">
-<div class="logo-top-line">TriPA Lead Gen Pros</div>
-<div class="logo-bottom-line">Built by three - Focused on Growth</div>
-</div>
-</div>
-<!-- Navigation Links (Centered) -->
-<div class="nav-links" id="navLinks">
-<nav>
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#clients">Clients</a>
-<a href="#team">Team</a>
-<a href="#contact">Contact</a>
-</nav>
-</div>
-<!-- Right Side with Toggle and Mobile Menu -->
-<div class="header-right">
-<!-- Toggle in Right Corner -->
-<div class="toggle-container">
-<div class="toggle" id="toggle">
-<span></span>
-<i class="fas fa-sun sun"></i>
-<i class="fas fa-moon moon"></i>
-</div>
-</div>
-<!-- Mobile Menu Button -->
-<button class="mobile-menu-btn" id="mobileMenuBtn">
-<i class="fas fa-bars"></i>
-</button>
-</div>
+    <img src="company-logo.png" alt="TriPA" class="logo-img">
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#serve">Services</a>
+        <a href="#industries">Industries</a>
+        <a href="#process">Process</a>
+        <a href="#story">Story</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
-<section class="hero show" id="home">
-<div class="hero-content">
-<h1>Built by three - focused on Growth</h1>
-<p>We design growth that works. TriPA Lead Gen Pros delivers high-quality leads, data enrichment, and appointment setting for B2B &amp; B2C companies.</p>
-<a class="cta-button" href="#contact">Start Growing Today <i class="fas fa-arrow-right"></i></a>
-</div>
+
+<section class="hero reveal" id="home">
+    <h1>Built by Three,<br>Focused on Growth</h1>
+    <p>Premium Lead Generation Agency</p>
 </section>
-<section id="services">
-<h2>Our Services</h2>
-<div class="cards">
-<div class="card">
-<h3>Market Research</h3>
-<small>High-intent prospect discovery and market analysis to identify your ideal customers.</small>
-</div>
-<div class="card">
-<h3>Lead Qualification</h3>
-<small>Turn raw leads into sales-ready opportunities with our rigorous qualification process.</small>
-</div>
-<div class="card">
-<h3>Data Scraping</h3>
-<small>Comprehensive data extraction from multiple sources to build targeted prospect lists.</small>
-</div>
-<div class="card">
-<h3>Database (Ready-made Lists)</h3>
-<small>Access our proprietary databases of verified companies and decision-makers across industries.</small>
-</div>
-<div class="card">
-<h3>Data Enrichment</h3>
-<small>Clean, accurate, and enriched data that powers your sales and marketing efforts.</small>
-</div>
-<div class="card">
-<h3>Email Marketing</h3>
-<small>Personalized, high-converting email campaigns that drive engagement and sales.</small>
-</div>
-<div class="card">
-<h3>Software Development</h3>
-<small>Growth-focused websites and tools designed to convert visitors into customers.</small>
-</div>
-</div>
+
+<section id="serve">
+    <div class="section-header"><h2>What We Serve</h2></div>
+    <div class="grid">
+        <div class="premium-glass-card"><i class="fas fa-search"></i><h3>Market Research</h3><p>High-intent prospect discovery and market analysis.</p></div>
+        <div class="premium-glass-card"><i class="fas fa-user-check"></i><h3>Lead Qualification</h3><p>Turn raw leads into sales-ready opportunities.</p></div>
+        <div class="premium-glass-card"><i class="fas fa-database"></i><h3>Data Scraping</h3><p>Targeted prospect list extraction from multiple sources.</p></div>
+        <div class="premium-glass-card"><i class="fas fa-server"></i><h3>Database</h3><p>Verified companies and decision-makers across regions.</p></div>
+        <div class="premium-glass-card"><i class="fas fa-magic"></i><h3>Data Enrichment</h3><p>Clean, accurate, and enriched data for your campaigns.</p></div>
+        <div class="premium-glass-card"><i class="fas fa-envelope-open-text"></i><h3>Email Marketing</h3><p>Personalized, high-converting outreach sequences.</p></div>
+        <div class="premium-glass-card"><i class="fas fa-laptop-code"></i><h3>Software Development</h3><p>Growth-focused websites and internal tools.</p></div>
+    </div>
 </section>
+
 <section id="industries">
-<h2>Industries We Serve</h2>
-<div class="cards">
-<div class="card">
-<h3>Technology</h3>
-<small>SaaS, IT services, software developers, and tech startups.</small>
-</div>
-<div class="card">
-<h3>Healthcare</h3>
-<small>Medical devices, telehealth, pharmaceuticals, and healthcare services.</small>
-</div>
-<div class="card">
-<h3>AEC</h3>
-<small>Architecture, engineering, and construction firms.</small>
-</div>
-<div class="card">
-<h3>Real Estate</h3>
-<small>Commercial, residential, and property development companies.</small>
-</div>
-<div class="card">
-<h3>Manufacturing</h3>
-<small>Industrial, consumer goods, and equipment manufacturers.</small>
-</div>
-<div class="card">
-<h3>Financing</h3>
-<small>Fintech, investment firms, banking, and financial services.</small>
-</div>
-<div class="card">
-<h3>Professional Services</h3>
-<small>Consulting, legal, accounting, and marketing agencies.</small>
-</div>
-<div class="card">
-<h3>All B2B &amp; B2C</h3>
-<small>We adapt our strategies to any industry seeking growth.</small>
-</div>
-</div>
-</section>
-<section id="process">
-<h2>Our Process</h2>
-<div class="process-flow">
-<div class="process-step">
-<div class="step-number">1</div>
-<h3>Research</h3>
-<small>Deep dive into your market and competitors</small>
-</div>
-<div class="arrow">→</div>
-<div class="process-step">
-<div class="step-number">2</div>
-<h3>Qualification</h3>
-<small>Identify and verify high-potential leads</small>
-</div>
-<div class="arrow">→</div>
-<div class="process-step">
-<div class="step-number">3</div>
-<h3>Enrichment</h3>
-<small>Enhance data for personalized outreach</small>
-</div>
-<div class="arrow">→</div>
-<div class="process-step">
-<div class="step-number">4</div>
-<h3>Delivery</h3>
-<small>Hand over sales-ready leads and insights</small>
-</div>
-</div>
+    <div class="section-header"><h2>Industries We Serve</h2></div>
+    <div class="grid">
+        <div class="premium-glass-card"><i class="fas fa-microchip"></i><h3>Technology</h3><p>SaaS, IT services, and tech startups.</p></div>
+        <div class="premium-glass-card"><i class="fas fa-heartbeat"></i><h3>Healthcare</h3><p>Medical devices, telehealth, and pharmaceuticals.</p></div>
+        <div class="premium-glass-card"><i class="fas fa-building"></i><h3>AEC</h3><p>Architecture, engineering, and construction firms.</p></div>
+        <div class="premium-glass-card"><i class="fas fa-home"></i><h3>Real Estate</h3><p>Commercial and property development companies.</p></div>
+        <div class="premium-glass-card"><i class="fas fa-industry"></i><h3>Manufacturing</h3><p>Industrial and equipment manufacturers.</p></div>
+        <div class="premium-glass-card"><i class="fas fa-coins"></i><h3>Financing</h3><p>Fintech, investment firms, and banking.</p></div>
+        <div class="premium-glass-card"><i class="fas fa-user-tie"></i><h3>Professional Services</h3><p>Consulting, legal, and marketing agencies.</p></div>
+        <div class="premium-glass-card"><i class="fas fa-shopping-cart"></i><h3>Retail</h3><p>E-commerce, Apparel, and Personal Care.</p></div>
+        <div class="premium-glass-card" style="grid-column: 1/-1;"><i class="fas fa-globe"></i><h3>All B2B & B2C</h3><p>Tailored strategies for any industry seeking scale and growth.</p></div>
+    </div>
 </section>
 
-<!-- About Section -->
-<section id="about">
-<h2>About Us</h2>
-<div class="about-content">
-<div class="about-text">
-<p><strong>TriPA Lead Gen Pros</strong> was founded on experience, collaboration, and a shared vision for growth.</p>
-
-<p>In 2020, <strong>Teja Ande</strong>, <strong>Anand Babu</strong>, and <strong>Poorna Chandra</strong> became roommates after joining the same organization. While working together, each of us specialized in different growth-focused segments—lead generation, market research, and email marketing—gaining hands-on experience across diverse industries and global markets. Over the next five years, we collectively helped companies generate qualified leads, strengthen sales pipelines, and drive measurable revenue growth.</p>
-
-<p>As our experience deepened, we recognized a common challenge faced by many businesses: access to high-quality, sales-ready leads backed by accurate data and effective outreach. What began as conversations between teammates soon evolved into a clear plan—build a company that delivers growth solutions that actually work.</p>
-
-<div class="about-highlight">
-<p>That vision led to the creation of <strong>TriPA Lead Gen Pros</strong> — Built by Three, Focused on Growth.</p>
-</div>
-
-<p>Today, we support B2B and B2C businesses across all regions, partnering with startups and established companies to design scalable lead generation systems. We work across multiple industries, delivering both custom-built databases tailored to client requirements and proprietary, ready-to-use datasets developed through our in-house research processes.</p>
-
-<p>To further strengthen outreach performance, we have also developed our own email marketing infrastructure, enabling secure, compliant, and high-volume campaign execution with better control over deliverability and results.</p>
-
-<p>At TriPA, we don't believe in one-size-fits-all solutions. Every strategy we design is rooted in data, aligned with business goals, and focused on long-term growth. Our journey began as a shared workspace—and has grown into a trusted growth partner for businesses worldwide.</p>
-</div>
-</div>
-</section>
-
-<!-- Clients Section with Vertical Scrolling -->
 <section id="clients">
-<h2>Clients We've Worked With</h2>
-<div class="clients-container">
-<div class="clients-scroll-wrapper">
-<!-- First Set -->
-<div class="client-row">
-<div class="card case">
-<img alt="Bleeding Edge Technologies" src="client_1.png"/>
-<small>BLEEDINGEDGE TECHNOLOGIES</small>
-</div>
-<div class="card case">
-<img alt="Greyadstudic" src="Client_2.png"/>
-<small>Greyadstudic - Transform Over Dimensions</small>
-</div>
-<div class="card case">
-<img alt="The Venture Beast" src="Client-3.png"/>
-<small>THE VENTURE BEAST</small>
-</div>
-</div>
-<!-- Second Set (Duplicated for continuous scroll) -->
-<div class="client-row">
-<div class="card case">
-<img alt="Social House Marketing" src="client-4.png"/>
-<small>Social House Marketing</small>
-</div>
-<div class="card case">
-<img alt="Prashida X Digital" src="client-5.png"/>
-<small>Prashida X Digital</small>
-</div>
-<div class="card case">
-<img alt="Bizpole" src="client-6.png"/>
-<small>Bizpole</small>
-</div>
-</div>
-</div>
-</div>
+    <div class="section-header"><h2>Clients We've Worked With</h2></div>
+    <div class="marquee">
+        <div class="marquee-track">
+            <img src="client_1.png"> <img src="client_2.png"> <img src="client-3.png"> <img src="client-4.png"> <img src="client-5.png"> <img src="client-6.png">
+        </div>
+    </div>
 </section>
 
-<section id="team">
-<h2>Our Team</h2>
-<div class="team">
-<div class="card team-member">
-<strong>Teja Ande</strong>
-<small>Founder</small>
-<a href="mailto:outreach@tripaleadgen.com" class="team-email">outreach@tripaleadgen.com</a>
-</div>
-<div class="card team-member">
-<strong>Anand Babu</strong>
-<small>Co-Founder</small>
-<a href="mailto:outreach@tripaleadgen.com" class="team-email">outreach@tripaleadgen.com</a>
-</div>
-<div class="card team-member">
-<strong>Poorna Chandra</strong>
-<small>Co-Founder</small>
-<a href="mailto:outreach@tripaleadgen.com" class="team-email">outreach@tripaleadgen.com</a>
-</div>
-</div>
+<section id="process">
+    <div class="section-header"><h2>Our Process</h2></div>
+    <div class="process-grid">
+        <div class="process-card"><h3>Research</h3><p>Market deep dive.</p></div>
+        <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="process-card"><h3>Qualification</h3><p>Lead verification.</p></div>
+        <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="process-card"><h3>Enrichment</h3><p>Data enhancement.</p></div>
+        <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="process-card"><h3>Delivery</h3><p>Ready leads.</p></div>
+    </div>
+</section>
+
+<section id="story">
+    <div style="max-width: 850px; margin: 0 auto; background: var(--glass); padding: 50px; border-radius: 40px; border: 1px solid var(--glass-border); backdrop-filter: blur(10px);">
+        <h2 class="story-heading">Story behind TriPA</h2>
+        
+        <p style="margin-bottom: 20px;"><strong>TriPA Lead Gen Pros</strong> was founded on experience, collaboration, and a shared vision for growth.</p>
+        
+        <p style="margin-bottom: 20px;">In 2020, <strong>Teja Ande, Anand Babu, and Poorna Chandra</strong> became roommates after joining the same organization. While working together, each of us specialized in different growth-focused segments—lead generation, market research, and email marketing—gaining hands-on experience across diverse industries and global markets.</p>
+        
+        <p style="margin-bottom: 20px;">Over the next five years, we collectively helped companies generate qualified leads, strengthen sales pipelines, and drive measurable revenue growth. As our experience deepened, we recognized a common challenge faced by many businesses: access to high-quality, sales-ready leads backed by accurate data and effective outreach.</p>
+        
+        <p style="margin-bottom: 20px;">What began as conversations between teammates soon evolved into a clear plan—build a company that delivers growth solutions that actually work.</p>
+        
+        <p style="margin-bottom: 20px;">That vision led to the creation of <strong>TriPA Lead Gen Pros — Built by Three, Focused on Growth.</strong></p>
+        
+        <hr style="margin: 30px 0; border: none; border-top: 1px solid var(--glass-border);">
+        
+        <p style="margin-bottom: 20px;">Today, we support B2B and B2C businesses across all regions, partnering with startups and established companies to design scalable lead generation systems. We work across multiple industries, delivering both custom-built databases tailored to client requirements and proprietary, ready-to-use datasets developed through our in-house research processes.</p>
+        
+        <p style="margin-bottom: 20px;">To further strengthen outreach performance, we have also developed our own email marketing infrastructure, enabling secure, compliant, and high-volume campaign execution with better control over deliverability and results.</p>
+        
+        <p style="margin-bottom: 20px;">At TriPA, we don't believe in one-size-fits-all solutions. Every strategy we design is rooted in data, aligned with business goals, and focused on long-term growth.</p>
+        
+        <p style="margin-bottom: 0;">Our journey began as a shared workspace—and has grown into a trusted growth partner for businesses worldwide.</p>
+    </div>
+</section>
+
+<section id="founders">
+    <div class="section-header"><h2>The Founders</h2></div>
+    <div class="founders-wrapper">
+        <div class="founder-orb">
+            <div class="img-container"><img src="anand.png" alt="Anand Babu" style="width: 100%; height: 100%; object-fit: cover;"><div class="email-overlay">anand@tripaleadgen.com</div></div>
+            <h3>Anand Babu</h3><p style="color: var(--primary); font-weight: 700;">Co-Founder</p>
+        </div>
+        <div class="founder-orb">
+            <div class="img-container" style="width: 210px; height: 210px;"><img src="teja.png" alt="Teja Ande" style="width: 100%; height: 100%; object-fit: cover;"><div class="email-overlay">teja@tripaleadgen.com</div></div>
+            <h3>Teja Ande</h3><p style="color: var(--primary); font-weight: 700;">Founder</p>
+        </div>
+        <div class="founder-orb">
+            <div class="img-container"><img src="poorna.png" alt="Poorna Chandra" style="width: 100%; height: 100%; object-fit: cover;"><div class="email-overlay">poorna@tripaleadgen.com</div></div>
+            <h3>Poorna Chandra</h3><p style="color: var(--primary); font-weight: 700;">Co-Founder</p>
+        </div>
+    </div>
 </section>
 
 <section id="contact">
-<h2>Contact Us</h2>
-<div class="contact-container">
-<div class="contact-card">
-<h3>Get in Touch</h3>
-<div class="contact-details">
-<div class="contact-item">
-<div class="contact-icon">
-<i class="fas fa-envelope"></i>
-</div>
-<div class="contact-info">
-<div class="contact-label">Email Address</div>
-<a class="contact-value contact-email" href="mailto:outreach@tripaleadgen.com">
-              outreach@tripaleadgen.com
-            </a>
-</div>
-</div>
-<div class="contact-item">
-<div class="contact-icon">
-<i class="fas fa-phone"></i>
-</div>
-<div class="contact-info">
-<div class="contact-label">Phone Numbers</div>
-<div class="contact-value">
-<div class="contact-phone-numbers">
-<div class="phone-number">8074581554</div>
-<div class="phone-number">7075467940</div>
-</div>
-</div>
-</div>
-</div>
-<div class="contact-item">
-<div class="contact-icon">
-<i class="fas fa-map-marker-alt"></i>
-</div>
-<div class="contact-info">
-<div class="contact-label">Location</div>
-<div class="contact-value">Bangalore, India</div>
-</div>
-</div>
-</div>
-<a class="contact-button" href="mailto:outreach@tripaleadgen.com">
-<i class="fas fa-paper-plane"></i> Email Us Now
-      </a>
-</div>
-</div>
+    <div class="section-header"><h2>Get In Touch</h2></div>
+    <div class="grid">
+        <a href="mailto:outreach@tripaleadgen.com" class="contact-tile">
+            <i class="fas fa-envelope-open-text"></i>
+            <h4>Email Us</h4>
+            <p>outreach@tripaleadgen.com</p>
+        </a>
+        <div class="contact-tile">
+            <i class="fas fa-phone-alt"></i>
+            <h4>Call Us</h4>
+            <p>+91 80745 81554</p>
+            <p>+91 70754 67940</p>
+        </div>
+        <div class="contact-tile">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Our Base</h4>
+            <p>Bangalore, India</p>
+        </div>
+    </div>
+    
+    <div class="social-hub">
+        <a href="https://www.linkedin.com/company/tripa-lead-gen-pros/about/" target="_blank" class="social-btn li"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/tripa_leadgen" target="_blank" class="social-btn ig"><i class="fab fa-instagram"></i></a>
+    </div>
 </section>
-<footer>
-<div class="footer-content">
-<div class="footer-logo">
-<div class="primary">TriPA</div>
-<div class="tagline">LEAD GEN PROS</div>
-</div>
-<div>
-<p>© 2026 TriPA Lead Gen Pros — Bangalore, India</p>
-<p>Built by three - focused on Growth.</p>
-</div>
-<div class="social-links">
-<a href="https://www.linkedin.com/" target="_blank" class="linkedin">
-<i class="fab fa-linkedin"></i>
-</a>
-<a href="https://twitter.com/" target="_blank" class="twitter">
-<i class="fab fa-twitter"></i>
-</a>
-<a href="https://facebook.com/" target="_blank" class="facebook">
-<i class="fab fa-facebook"></i>
-</a>
-<a href="https://instagram.com/" target="_blank" class="instagram">
-<i class="fab fa-instagram"></i>
-</a>
-</div>
-</div>
+
+<footer style="text-align: center; padding: 40px; opacity: 0.6; font-size: 0.8rem;">
+    &copy; 2026 TriPA Lead Gen Pros. All Rights Reserved.
 </footer>
+
 <script>
-// Dark mode toggle
-document.getElementById("toggle").onclick = () => {
-  document.body.classList.toggle("dark");
-  
-  // Save preference to localStorage
-  const isDarkMode = document.body.classList.contains("dark");
-  localStorage.setItem("darkMode", isDarkMode);
-};
-
-// Mobile menu toggle
-const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-const navLinks = document.getElementById("navLinks");
-
-mobileMenuBtn.onclick = () => {
-  navLinks.classList.toggle("active");
-  mobileMenuBtn.innerHTML = navLinks.classList.contains("active") 
-    ? '<i class="fas fa-times"></i>' 
-    : '<i class="fas fa-bars"></i>';
-};
-
-// Close mobile menu when clicking a link
-document.querySelectorAll('nav a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-  });
-});
-
-// Scroll reveal animation
-const sections = document.querySelectorAll("section");
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px"
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
-  });
-}, observerOptions);
-
-sections.forEach(section => {
-  observer.observe(section);
-});
-
-// 3D hover effect for cards
-document.querySelectorAll(".card").forEach(card => {
-  card.addEventListener("mousemove", e => {
-    const rect = card.getBoundingClientRect();
-    const x = (e.clientX - rect.left - rect.width / 2) / 15;
-    const y = (e.clientY - rect.top - rect.height / 2) / 15;
-    
-    card.style.transform = `perspective(1000px) rotateY(${x}deg) rotateX(${-y}deg) translateY(-10px) scale(1.02)`;
-  });
-  
-  card.addEventListener("mouseleave", () => {
-    card.style.transform = "perspective(1000px) rotateY(0) rotateX(0) translateY(0) scale(1)";
-  });
-});
-
-// Check for saved dark mode preference
-const savedDarkMode = localStorage.getItem("darkMode");
-if (savedDarkMode === "true") {
-  document.body.classList.add("dark");
-}
-
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    
-    const targetId = this.getAttribute('href');
-    if(targetId === '#') return;
-    
-    const targetElement = document.querySelector(targetId);
-    if(targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 80,
-        behavior: 'smooth'
-      });
-    }
-  });
-});
-
-// Initialize client scrolling animation
-const clientsWrapper = document.querySelector('.clients-scroll-wrapper');
-if (clientsWrapper) {
-  // Reset animation on scroll end
-  clientsWrapper.addEventListener('animationiteration', () => {
-    // Smooth reset to create continuous loop
-    clientsWrapper.style.animation = 'none';
-    setTimeout(() => {
-      clientsWrapper.style.animation = 'scrollClients 20s linear infinite';
-    }, 10);
-  });
-}
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('reveal');
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('section').forEach(s => observer.observe(s));
 </script>
+
 </body>
 </html>
